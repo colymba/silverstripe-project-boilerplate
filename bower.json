@@ -1,0 +1,13 @@
+{
+  "name": "ss-project-boilerplate",
+  "version": "1.0.0",
+  "dependencies": {
+    "picturefill": "~1",
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.3",
+    "normalize-css": "~3.0.1",
+    "susy": "~2.1.3",
+    "breakpoint-sass": "~2.5.0",
+    "bourbon": "~4.0.2"
+  }
+}

@@ -1,0 +1,35 @@
+---
+Name: ssProjectBoilerblate
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# ###################################
+# Base YAML config file with some practical
+# defaults and things to remember.
+# ###################################
+# -----------------------------------
+# Database
+MySQLDatabase:
+  connection_charset: 'utf8'
+# -----------------------------------
+# Director
+Director:
+  environment_type: 'dev'
+# -----------------------------------
+# Progressive images + better quality
+GDBackend:
+  default_quality: 95
+  image_interlace: 1
+Image:
+  downsampling_only: true
+# -----------------------------------
+# Siteconfig (Uncomment if using the SiteConfig addon)
+#SiteConfig:
+#  extensions:
+#    - PJSiteConfig
+# -----------------------------------
+# CMS
+LeftAndMain:
+  extensions:
+    - PJLeftAndMain

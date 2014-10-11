@@ -1,0 +1,19 @@
+{
+  "name": "colymba/silverstripe-project-boilerplate",
+  "type": "silverstripe-module",
+  "description": "SilverStripe Project boilerplate/skeleton with nifty tools, tips and tricks.",
+  "homepage": "https://github.com/colymba/silverstripe-project-boilerplate",
+  "keywords": ["silverstripe", "project boilerplate", "project skeleton"],
+  "license": "BSD Simplified",
+  "authors": [{
+    "name": "Thierry Francois",
+    "homepage": "http://colymba.com"
+  }],
+  "repositories": [{
+    "type": "vcs",
+    "url": "git@github.com:colymba/silverstripe-project-boilerplate.git"
+  }],
+  "require": {
+    "silverstripe/framework": "*"
+  }
+}
