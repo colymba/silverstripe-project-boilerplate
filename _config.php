@@ -16,9 +16,22 @@ $project = 'ss-project-boilerblate';
  * Database definition
  * Update with you DB config if not using environment
  */
+/*::config:dev*/
 global $database;
 $database = 'ss-project-boilerblate';
+/*::config*/
 
+/*::config:live
+global $databaseConfig;
+$databaseConfig = array(
+  'type'     => 'MySQLDatabase',
+  'server'   => 'localhost',
+  'username' => '',
+  'password' => '',
+  'database' => '',
+  'path'     => ''
+);
+::config*/
 
 /**
  * Environment management

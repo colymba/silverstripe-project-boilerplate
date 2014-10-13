@@ -68,6 +68,14 @@ Once that's done, run `grunt dev` and start coding. This will inject Bower JS/CS
 
 Once you are done and ready to publish your project, run `grunt dist` and an optimized copy of all your project files will be in the `_dist` directory ready to upload. Config will be updated to live, CSS/JS concatenated and minified, and all you templates minified too.
 
+#### Dev/Live configurations
+
+The `grunt dist` task will autiomatically replace references of `environment_type: 'dev'` to `live` in your `config.yml`.
+
+For PHP files (this applies to **all** PHP files in your project directory), you can use fenced code blocks to specify code that is to be removed or enabled in the distribution version (see `_config.php` for an example):
+- use `/*::config:dev*/` ... `/*::config*/` to mark blocks of codes to be removed
+- use `/*::config:live` ... `::config*/` to mark blocks of codes to be enabled
+
 
 ## @TODO
 

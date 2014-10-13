@@ -302,7 +302,7 @@ module.exports = function (grunt) {
 
     // update configs to live
     replace: {
-      liveConfig: {
+      ymlConfig: {
         options: {
           usePrefix: false,
           patterns: [
@@ -313,7 +313,24 @@ module.exports = function (grunt) {
           ]
         },
         files: [
-          {src: ['<%= config.dist %>/_config/config.yml'], dest: '<%= config.dist %>/_config/config.yml'}
+          {expand: true, src: ['<%= config.dist %>/_config/config.yml'], dest: '.'}
+        ]
+      },
+      phpConfig: {
+        options: {
+          usePrefix: false,
+          patterns: [
+            {
+              match: /(\/\*::config:dev\*\/)([\w\W\s]*)(\/\*::config\*\/)/g,
+              replacement: ""
+            },{
+              match: /(\/\*::config:live)([\w\W\s]*)(::config\*\/)/g,
+              replacement: "$2"
+            }
+          ]
+        },
+        files: [
+          {expand: true, src: ['<%= config.dist %>/**/*.php'], dest: '.'}
         ]
       }
     }
@@ -337,7 +354,8 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin',
 
-    'replace:liveConfig',
+    'replace:ymlConfig',
+    'replace:phpConfig',
 
     'clean:tmp',
   ]);
