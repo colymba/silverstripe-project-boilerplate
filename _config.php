@@ -67,6 +67,6 @@ require_once('_config/HtmlEditorConfig.php');
 /**
  * Error logging
  */
-SS_Log::add_writer(new SS_LogFileWriter('/_logs/ss.txt'), SS_Log::DEBUG, '<=');
-ini_set("log_errors", "On");
-ini_set("error_log", "/_logs/php.txt");
+SS_Log::add_writer(new SS_LogFileWriter(__DIR__ . '/_logs/ss.txt'), SS_Log::DEBUG, '<=');
+ini_set('log_errors', 'On');
+ini_set('error_log', __DIR__ . '/_logs/php.txt');
