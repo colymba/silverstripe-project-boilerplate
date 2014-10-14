@@ -17,6 +17,10 @@ MySQLDatabase:
 Director:
   environment_type: 'dev'
 # -----------------------------------
+# Emails (Please update)
+Email:
+  admin_email: 'admin@youdomain.com'
+# -----------------------------------
 # Progressive images + better quality
 GDBackend:
   default_quality: 95
