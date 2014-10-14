@@ -179,6 +179,24 @@ module.exports = function (grunt) {
                   context.options.generated.files[index].src = src;
                 });
               }
+            }],
+            js: [{
+              name: 'concat',
+              prefix: '<%= config.cssjsprefix %>'+path.sep,
+              createConfig: function (context, block) {
+                var generated = context.options.generated,
+                    prefix = this.prefix,
+                    src;
+
+                generated.files.forEach(function(element, index, array){
+                  src = [];
+                  element.src.forEach(function(e, i, a){ 
+                    src.push(e.replace(prefix, ''));
+                  });
+
+                  context.options.generated.files[index].src = src;
+                });
+              }
             }]
           }
         }
