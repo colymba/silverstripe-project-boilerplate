@@ -350,7 +350,7 @@ module.exports = function (grunt) {
 
     'copy:dist', 
     
-    'rev',
+    //'rev',
     'usemin',
     'htmlmin',
 
