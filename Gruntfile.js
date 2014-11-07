@@ -251,6 +251,13 @@ module.exports = function (grunt) {
     usemin: {
       options: {
         assetsDirs: ['<%= config.dist %>/code/views/**/'], 
+        patterns: {
+          html: [
+            [/(main\.js)/, 'Replacing reference to main.js'],
+            [/(main\.css)/, 'Replacing reference to main.css'],
+            [/(modernizr\.js)/, 'Replacing reference to modernizr.js']
+          ]
+        },
         blockReplacements: {
           prefix: '<%= config.templatePathPrefix %>/',
           css: function (block) {

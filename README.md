@@ -77,11 +77,6 @@ For PHP files (this applies to **all** PHP files in your project directory), you
 - use `/*::config:live` ... `::config*/` to mark blocks of codes to be enabled
 
 
-## @TODO
-
-- Files revving doesn't work yet
-
-
 ## License (BSD Simplified)
 
 Copyright (c) 2013, Thierry Francois (colymba)
