@@ -363,7 +363,9 @@ module.exports = function (grunt) {
           ]
         },
         files: [
-          {expand: true, src: ['<%= config.dist %>/**/*.php'], dest: '.'}
+          {expand: true, src: ['<%= config.dist %>/*.php'], dest: '.'},
+          {expand: true, src: ['<%= config.dist %>/code/models/**/*.php'], dest: '.'},
+          {expand: true, src: ['<%= config.dist %>/code/controllers/**/*.php'], dest: '.'}
         ]
       }
     }
