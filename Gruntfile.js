@@ -250,7 +250,7 @@ module.exports = function (grunt) {
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
       options: {
-        //assetsDirs: ['<%= config.dist %>/code/views/img'], 
+        assetsDirs: ['<%= config.dist %>/code/views/**/'], 
         blockReplacements: {
           prefix: '<%= config.templatePathPrefix %>/',
           css: function (block) {
