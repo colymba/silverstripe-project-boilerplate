@@ -19,8 +19,13 @@ class PJLeftAndMain extends LeftAndMainExtension
       $menu->title,
       $menu->url,
       $menu->controller,
-      0
+      0 //actual sort order to change
     );
     */
+   
+    /**
+     * Stylesheet with basic overrides
+     */
+    Requirements::css(SS_PROJECT_BOILERPLATE_ROOT . '/code/views/css/LeftAndMain.css');
   }
 }

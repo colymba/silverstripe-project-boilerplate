@@ -34,6 +34,9 @@ Image:
 #    - PJSiteConfig
 # -----------------------------------
 # CMS
+# See code/views/img/cms/application_icon.png to change the icon
 LeftAndMain:
+  application_name: 'SilverStripe'
+  application_link: 'http://silverstripe.org'
   extensions:
     - PJLeftAndMain
