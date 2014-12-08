@@ -40,3 +40,6 @@ LeftAndMain:
   application_link: 'http://silverstripe.org'
   extensions:
     - PJLeftAndMain
+# Change 'SecurityAdmin' to any other admin section
+AdminRootController:
+  default_panel: 'SecurityAdmin'
