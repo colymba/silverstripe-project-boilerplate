@@ -6,9 +6,9 @@
  */
 class PJLeftAndMain extends LeftAndMainExtension
 {
-  public function init()
-  {
-    //CMSMenu::remove_menu_item('Help'); //Note: this can't be in _config.php!
+    public function init()
+    {
+        //CMSMenu::remove_menu_item('Help'); //Note: this can't be in _config.php!
 
     /**
      * Basic exmplate for reorganising a menu
@@ -27,5 +27,5 @@ class PJLeftAndMain extends LeftAndMainExtension
      * Stylesheet with basic overrides
      */
     Requirements::css(SS_PROJECT_BOILERPLATE_ROOT . '/code/views/css/LeftAndMain.css');
-  }
+    }
 }

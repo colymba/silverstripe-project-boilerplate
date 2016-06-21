@@ -8,13 +8,13 @@
 class Page_Controller extends ContentController implements TemplateGlobalProvider
 {
 
-  private static $allowed_actions = array (
+    private static $allowed_actions = array(
   );
 
-  public function init()
-  {
-    parent::init();
-  }
+    public function init()
+    {
+        parent::init();
+    }
 
   /** ***************************************************************************
    * Temlplate variables/functions
@@ -22,7 +22,7 @@ class Page_Controller extends ContentController implements TemplateGlobalProvide
 
   public static function get_template_global_variables()
   {
-    return array(
+      return array(
       'PJ' => 'pj_root',
       'YEAR' => 'current_year'
     );
@@ -38,7 +38,7 @@ class Page_Controller extends ContentController implements TemplateGlobalProvide
    */
   public static function pj_root()
   {
-    return SS_PROJECT_BOILERPLATE_ROOT;
+      return SS_PROJECT_BOILERPLATE_ROOT;
   }
 
   /**
@@ -49,7 +49,6 @@ class Page_Controller extends ContentController implements TemplateGlobalProvide
    */
   public static function current_year()
   {
-    return date('Y');
+      return date('Y');
   }
-
 }
